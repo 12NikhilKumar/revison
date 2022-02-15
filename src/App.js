@@ -7,6 +7,7 @@ import { Login } from './pages/login';
 import { BrowserRouter } from 'react-router-dom';
 import { Navbar } from './component/navbar';
 import { AllRoutes } from './routes/routes';
+import { Alarm } from './pages/alarm';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <BrowserRouter>
         <AppcontextProvider>
           {/* <Navbar/> */}
-          <AllRoutes/>
+          {/* <AllRoutes/> */}
+          <Alarm/>
         </AppcontextProvider>
       </BrowserRouter>
     </div>
