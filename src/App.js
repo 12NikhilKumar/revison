@@ -11,6 +11,7 @@ import { Alarm } from './pages/alarm';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import { Git } from './pages/git';
+import { Count, Counter, MemoizedCount } from './pages/memo';
 
 function App() {
   return (
@@ -22,9 +23,13 @@ function App() {
           {/* <Alarm/>
         </AppcontextProvider>
       </BrowserRouter> */}
-      <Provider store={store}>
+      {/* <Provider store={store}>
         <Git/>
-      </Provider>
+      </Provider> */}
+      {/* <Alarm/> */}
+      <MemoizedCount/>
+      {/* <Count/> */}
+      <Counter/>
     </div>
   );
 }
