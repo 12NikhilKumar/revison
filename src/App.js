@@ -8,17 +8,23 @@ import { BrowserRouter } from 'react-router-dom';
 import { Navbar } from './component/navbar';
 import { AllRoutes } from './routes/routes';
 import { Alarm } from './pages/alarm';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
+import { Git } from './pages/git';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <AppcontextProvider>
           {/* <Navbar/> */}
           {/* <AllRoutes/> */}
-          <Alarm/>
+          {/* <Alarm/>
         </AppcontextProvider>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <Provider store={store}>
+        <Git/>
+      </Provider>
     </div>
   );
 }
