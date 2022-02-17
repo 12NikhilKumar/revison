@@ -13,6 +13,7 @@ import { store } from './redux/store';
 import { Git } from './pages/git';
 import { Count, Counter, MemoizedCount } from './pages/memo';
 import { Todo } from './pages/parent';
+import { TickTok } from './pages/tictaktoe';
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
       {/* <MemoizedCount/> */}
       {/* <Count/> */}
       {/* <Counter/> */}
-      <Todo/>
+      {/* <Todo/> */}
+      <TickTok/>
     </div>
   );
 }
