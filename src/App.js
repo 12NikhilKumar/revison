@@ -14,6 +14,7 @@ import { Git } from './pages/git';
 import { Count, Counter, MemoizedCount } from './pages/memo';
 import { Todo } from './pages/parent';
 import { TickTok } from './pages/tictaktoe';
+import { Timer } from './pages/timer';
 
 function App() {
   return (
@@ -33,7 +34,8 @@ function App() {
       {/* <Count/> */}
       {/* <Counter/> */}
       {/* <Todo/> */}
-      <TickTok/>
+      {/* <TickTok/> */}
+      <Timer/>
     </div>
   );
 }
