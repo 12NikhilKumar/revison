@@ -12,6 +12,7 @@ import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import { Git } from './pages/git';
 import { Count, Counter, MemoizedCount } from './pages/memo';
+import { Todo } from './pages/parent';
 
 function App() {
   return (
@@ -27,9 +28,10 @@ function App() {
         <Git/>
       </Provider> */}
       {/* <Alarm/> */}
-      <MemoizedCount/>
+      {/* <MemoizedCount/> */}
       {/* <Count/> */}
-      <Counter/>
+      {/* <Counter/> */}
+      <Todo/>
     </div>
   );
 }
